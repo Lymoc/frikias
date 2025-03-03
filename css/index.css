@@ -181,12 +181,7 @@ footer{
     color: black
 }
 
-/* Evitando que se vea la barra de navegación por debajo de los 2000px*/
-@media (600px <= width <= 2000px) {
-    .nav a{
-        display: none;
-    }
-}
+
 
 /* Ajustando el logo al centro y quitando la posición fixed*/
 @media (600px <= width <= 2000px) {
