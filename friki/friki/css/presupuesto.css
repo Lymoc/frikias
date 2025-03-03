@@ -1,0 +1,164 @@
+/* BARRA DE NAVEGACIÓN*/
+
+/* Ajustando el ancho máximo de la web*/
+body{
+    max-width: 2000px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-image: url(../assets/images/productos.css/fondobody.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+/* Usando flex para que los links salgan a la derecha del logo*/
+.nav{
+    position: fixed;
+    display: flex;
+    height: 100px;
+    width: auto;
+}
+
+
+/* Ajustando tamaño de la imagen del logo*/
+.logo img{
+    height: 100px;
+    width: 200px;
+}
+
+/* Ajustando los botones en la posición que más me guste*/
+button{
+    color: rgb(78, 94, 184);
+    font-weight: 900;
+    font-size: 25px;
+    background-color: white;
+    height: 100px;
+    width: 300px;
+    border: none;
+    padding: 0px 20px;
+}
+
+/* Coloreando el botón que selecciono y cambiando el cursor cuando lo hago*/
+button:hover{
+    background-color: rgb(245, 129, 177);
+    cursor: pointer;
+}
+
+/* Cambiando el color al enlace de la web en el que me encuentro*/
+.presupuesto{
+    background-color: rgb(245, 129, 177);
+}
+
+/* Ajustando la posición del logo de settings*/
+.settings{
+    align-content: center;
+}
+
+/* Ajuste del tamaño del logo de settings*/
+.settings img{
+    height: 50px;
+}
+
+/* MAIN*/
+
+/* Moviendo el formulario al centro*/
+main{
+    text-align: center;
+    padding-top: 100px;
+}
+
+/* Dándole un fondo al formulario*/
+.formulario{
+    background-color: rgb(202, 196, 196, 0.5);
+    padding: 20px 0px;
+}
+
+/* Agrandando las casillas del formulario*/
+input[type="text"], input[type="email"], input[type="tel"]{
+    height: 20px;
+    width: 300px;
+}
+
+/* Agrandando el tamaño de los botones*/
+input[type="submit"], input[type="reset"]{
+    height: 30px;
+    width: 100px;
+}
+
+/* Separando un poco los botones*/
+input[type="reset"]{
+    margin-left: 20px;
+}
+
+/* FOOTER*/
+
+footer{
+    background-image: url(/assets/images/fondo\ gris\ metalico.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 500px;
+}
+
+/* Estableciendo un flex en la parte de arriba del footer para colocar las cosas*/
+.fila1{
+    display: flex;
+    padding: 20px 10px;
+}
+
+/* Dándole formato al texto de los datos*/
+.datos{
+    font-weight: 600;
+}
+
+/* Colocando los logos de la R.R.S.S a la derecha*/
+.socials{
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+/* Ajustando el tamaño de los logos*/
+.socials img{
+    height: 70px;
+}
+
+/* Dando formato al aviso legal*/
+.avisolegal{
+    text-align: center;
+    border-top: solid 2px black;
+    padding: 20px 0px;    
+}
+
+/* Quitando subrayado al link del aviso legal*/
+.avisolegal a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Haciendo que desaparezca la barra de links*/ 
+@media (max-width: 2000px){
+    .nav a{
+        display: none;
+    }
+}
+
+/* Quitando el padding-top de main para que el logo no se vea tan separado*/
+@media (max-width: 2000px){
+    main{
+        padding-top: 0;
+}
+}
+
+/* "Desfijando" el logo y trayéndolo al centro*/
+@media (max-width: 2000px){
+    .nav{
+        position: relative;
+        justify-content: center;
+    }
+}
+
+/* Quitando márgenes para que la caja de "textarea" no se salga del background*/
+@media (max-width: 1250px){
+    body{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

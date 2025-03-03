@@ -1,0 +1,250 @@
+/* BARRA DE NAVEGACIÓN*/
+
+/* Evitando que los bordes o paddings aumenten el tamaño de las cajas*/
+*{
+    box-sizing: border-box;
+}
+
+/* Ajustando el ancho máximo de la web*/
+body{
+    max-width: 2000px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-image: url(../assets/images/productos/fondobody.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Usando flex para que los links salgan a la derecha del logo*/
+.nav{
+    position: fixed;
+    display: flex;
+    height: 100px;
+    width: auto;
+    top: 0;
+}
+
+/* Dándole un padding-top a main para que la barra de navegación no se superponga*/
+main{
+    background-image: url(../assets/images/fondotexto1.png);
+    background-size: cover;
+    margin-top: 100px;
+}
+/* Ajustando tamaño de la imagen del logo*/
+.logo img{
+    height: 100px;
+    width: 200px;
+}
+
+/* Ajustando los botones en la posición que más me guste*/
+.nav a{
+    color: rgb(78, 94, 184);
+    font-weight: 900;
+    font-size: 25px;
+    height: 100px;
+    width: 300px;
+    border: none;
+    padding: 0px 20px;
+}
+
+/* Coloreando el botón que selecciono y cambiando el cursor cuando lo hago*/
+.nav a:hover{
+    background-color: rgb(245, 129, 177);
+    cursor: pointer;
+}
+
+/* Cambiando el color al enlace de la web en el que me encuentro*/
+.inicio{
+    background-color: rgb(245, 129, 177);
+}
+
+/* Ajustando la posición del logo de settings*/
+.settings{
+    align-content: center;
+}
+
+/* Ajuste del tamaño del logo de settings*/
+.settings img{
+    height: 50px;
+}
+
+/* SECCIÓN 1*/
+
+/* Tamaño y fondo de la sección 1*/
+.section1{
+    height: 300px;
+    align-content: center;
+}
+
+/* Posición del texto dentro de la sección 1*/
+.texto1{
+    background-color: rgb(236, 189, 226, 0.5);
+    font-size: 1.8vh;
+    font-weight: 600;
+    font-family: monospace;
+    margin-left: 30px;
+    margin-right: 60%;
+    padding: 20px 20px;
+    border-radius: 20px;
+    text-align: justify;
+    width: auto;
+    height: auto;
+    align-content: center;
+}
+
+/* SECCIÓN 2*/
+
+/* Tamaño y fondo de la sección 2*/
+.section2{
+    height: 300px;
+    align-content: center;
+}
+
+/* Posición del texto dentro de la sección 2*/
+.texto2{
+    background-color: rgb(161, 224, 224, 0.5);
+    font-size: 1.8vh;
+    font-weight: 600;
+    font-family: monospace;
+    margin-right: 30px;
+    margin-left: 70%;
+    padding: 20px 20px;
+    border-radius: 20px;
+    text-align: justify;
+    width: auto;
+    height: auto;
+}
+
+/* SECCIÓN 3*/
+
+/* Tamaño y fondo de la sección 2*/
+.section3{
+    height: 300px;
+    align-content: center;
+}
+
+/* Posición del texto dentro de la sección 3*/
+.texto3{
+    background-color: rgba(235, 240, 243, 0.5);
+    font-size: 2vh;
+    font-weight: 600;
+    font-family: monospace;
+    margin-right: 30%;
+    margin-left: 30%;
+    padding: 20px 20px;
+    border-radius: 20px;
+    text-align: justify;
+    width: auto;
+    height: auto;
+}
+
+/* FOOTER*/
+
+footer{
+    background-image: url(/assets/images/fondo-gris-metalico.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Estableciendo un flex en la parte de arriba del footer para colocar las cosas*/
+.fila1{
+    display: flex;
+    padding: 20px 10px;
+}
+
+/* Dándole formato al texto de los datos*/
+.datos{
+    font-weight: 600;
+}
+
+/* Colocando los logos de la R.R.S.S a la derecha*/
+.socials{
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+/* Ajustando el tamaño de los logos*/
+.socials img{
+    height: 70px;
+}
+
+/* Dando formato al aviso legal*/
+.avisolegal{
+    text-align: center;
+    border-top: solid 2px black;
+    padding: 20px 0px;    
+}
+
+/* Quitando subrayado al link del aviso legal*/
+.avisolegal a{
+    text-decoration: none;
+    color: black
+}
+
+/* Evitando que se vea la barra de navegación por debajo de los 2000px*/
+@media (max-width: 1250px) {
+    .nav a{
+        display: none;
+    }
+}
+
+/* Ajustando el logo al centro y quitando la posición fixed*/
+@media (600px <= width <= 2000px) {
+    .nav{
+        align-content: center;
+        justify-content: center;
+        position: relative;
+    }
+}
+
+/* Quitando el padding de main*/
+@media (600px <= width <= 2000px) {
+    main{
+        padding-top: 0px;
+    }
+}
+
+/* Quitando los márgenes*/
+@media (max-width: 1250px) {
+    body{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/* Reduciendo margen del texto1*/
+@media (min-width: 1500px) and (max-width: 2000px) {
+    .texto1{
+        margin-right: 40%;
+    }
+}
+
+/* Reduciendo margen del texto3*/
+@media (min-width: 1500px) and (max-width: 2000px) {
+    .texto2{
+        margin-left: 40%;
+    }
+}
+
+/* Reduciendo margen del texto3*/
+@media (min-width: 1500px) and (max-width: 2000px) {
+    .texto3{
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+}
+
+/* Quitando completamente margen de los textos*/
+@media (max-width: 1499px){
+    .texto1, .texto2, .texto3{
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+
+

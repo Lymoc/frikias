@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+    <link rel="stylesheet" href="../css/presupuesto.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="../assets/images/TodoCosasFrikis-portal-web-blog-tienda-online-friki-2020-header-mobile.png"
+                alt="logo de tienda friki" width="1200" height="699">
+        </div>
+        <div><a href="../index.html">INICIO</a></div>
+        <div><a href="./productos.html">PRODUCTOS</a></div>
+        <div><a href="./presupuesto.html">PRESUPUESTO</a></div>
+        <div><a href="./contacto.html">CONTACTO</a></div>
+        <div class="settings">
+            <a href="#"><img src="../assets/images/settingslogo.png" alt="settings logo"></a>
+        </div>
+    </div>
+    <main>
+        <h1>¡SOLICITE PRESUPUESTO YA!</h1>
+        <div class="formulario">
+            <form action="#" name="presupuesto" id="presup" method="post">
+                Nombre: <input type="text" name="nombre" id="nombre" required><br><br>
+                E-mail: <input type="email" name="e-mail" id="e-mail" required placeholder="direccion@email.com">
+                <br><br>
+                Teléfono: <input type="tel" name="telefono" id="telefono" required minlength="9"
+                    placeholder="Nº de teléfono sin espacios"><br><br>
+                Solicite más información: <br> <textarea cols="60" rows="10" name="info" id="info" required
+                    placeholder="Indique los productos sobre los que necesita un presupuesto"></textarea><br>
+                <input type="checkbox" name="casilla" id="casilla" required> Acepto la política de <a
+                    href="#">privacidad y ley de protección de datos</a><br><br>
+                <input type="submit" name="enviar" value="Enviar"><input type="reset" name="borrar" value="Borrar">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="fila1">
+            <div class="datos">
+                Todo Cosas Frikis S.L. <br>C/ Alcaparras 38, 45860 Madrid <br>todocosasfrikis@info.com <br>649 359 611
+            </div>
+            <div class="socials">
+                <span><a href="https://x.com/" target="_blank"><img src="../assets/images/x.png" alt="logo twitter"></a></span>
+                <span><a href="https://www.instagram.com/" target="_blank"><img src="../assets/images/instagram.png"
+                            alt="logo instagram"></a></span>
+                <span><a href="https://www.facebook.com/" target="_blank"><img src="../assets/images/facebook.png"
+                            alt="logo facebook"></a></span>
+                <span><a href="https://www.youtube.com/" target="_blank"><img src="../assets/images/youtube.png"
+                            alt="logo youtube"></a></span>
+            </div>
+        </div>
+        <div class="avisolegal">
+            <a href="#">AVISO LEGAL: Términos de Uso y Política de privacidad.</a>
+        </div>
+    </footer>
+</body>
+
+</html>
