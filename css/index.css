@@ -10,7 +10,7 @@ body{
     max-width: 2000px;
     margin-left: 20%;
     margin-right: 20%;
-    background-image: url(./assets/images/productos/fondobody.jpg);
+    background-image: url(../assets/images/productos/fondobody.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -26,7 +26,7 @@ body{
 
 /* Dándole un padding-top a main para que la barra de navegación no se superponga*/
 main{
-    background-image: url(./assets/images/fondotexto1.jpg);
+    background-image: url(../assets/images/fondotexto1.png);
     background-size: cover;
     margin-top: 100px;
 }
