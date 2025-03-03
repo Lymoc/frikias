@@ -181,7 +181,12 @@ footer{
     color: black
 }
 
-
+/* Haciendo que desaparezca la barra de links*/ 
+@media (max-width: 1000px){
+    .nav a{
+        display: none;
+    }
+}
 
 /* Ajustando el logo al centro y quitando la posición fixed*/
 @media (600px <= width <= 2000px) {
